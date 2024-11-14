@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебный сайт по кыргызскому языку</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
+<body>
+    <header>
+        <h2>ORT studying</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="suilom-toluktoo.html" onclick="toggleSection('suilom-toluktoo')">Сүйлөм толуктоо</a></li>
+            <li><a href="analogiya.html" onclick="toggleSection('analogiya')">Аналогия</a></li>
+            <li><a href="okuptushunuu.html" onclick="toggleSection('okuptushunuu')">Окуп түшүнүү</a></li>
+            <li><a href="gramatika.html" onclick="toggleSection('gramatika')">Грамматика</a></li>
+        </ul>
+    </nav>
+    <h1></h1>
+    <div class="container">
+        <h3>Okup tushunuu</h3>
+        <img src="img/pngtree-a-good-man-who-reads-many-books-png-image_12463292-removebg-preview.png" alt="Человек, читающий книги">
+        <h3>Okup tushunuu</h3>
+    </div>
+    <div class="h33">
+        <h1>baary sen Ychyn</h1>
+    </div>
+
+    <div class="container"
+    >
+        <h3>Suilom toluktoo</h3>
+        <img src="img/1first-removebg-preview.png" alt="Человек, читающий книги" >
+        
+    </div>
+    <div class="h33">
+        <h1>baary sen Ychyn</h1>
+    </div>
+
+    <div class="container">
+       
+        <img src="img/______-removebg-preview.png" alt="Человек, читающий книги">
+        <h3>Analogiya</h3>
+    </div>
+    
+    <footer>
+        <p>Учебный сайт © 2024. Все права защищены.</p>
+    </footer>
+    <script>
+        // Функция для проверки, виден ли элемент на экране
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return rect.top <= window.innerHeight && rect.bottom >= 0;
+        }
+
+        // Функция для добавления класса, который активирует анимацию
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.container, h1, h2, h3, p'); // Выбираем все элементы для анимации
+            elements.forEach(function(element) {
+                if (isElementInViewport(element)) {
+                    element.classList.add('visible'); // Добавляем класс, если элемент на экране
+                }
+            });
+        }
+
+        // Запуск функции при прокрутке
+        window.addEventListener('scroll', animateOnScroll);
+        // Выполнение функции сразу, чтобы обработать уже видимые элементы при загрузке
+        animateOnScroll();
+    </script>
+    
+</body>
+</html>

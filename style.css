@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    color: #333;
+}
+
+/* Стили для шапки */
+header {
+    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb); /* Ваш градиент */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Стили для навигации */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    margin: 0;
+    background: #8BC34A; /* Светло-зеленый фон */
+    border-radius: 25px;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #004d40;
+    transform: scale(1.1);
+}
+
+/* Стили для изображений */
+img {
+    display: block;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для секций */
+h3 {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+        
+
+    text-align: center;
+    font-size: 6em;
+    margin-top: 50px;
+    color: #004d40;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #00796b;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Анимация для появления */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Начинаем с положения ниже */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Двигаем в исходное положение */
+    }
+}
+
+.visible {
+    animation: fadeIn 1s ease-out forwards; /* Применяем анимацию появления */
+}
+
+/* Контейнер для размещения текста и изображения рядом */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    opacity: 0; /* Начальное скрытое состояние */
+    transform: translateY(20px); /* Начальное смещение вниз */
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Для изображения */
+.container img {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.h33 {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 4.6em;
+    color: #72c5b7;
+    margin-right: 0px;
+}

@@ -1,0 +1,22 @@
+<section id="analogiya">
+    <h2>Аналогия</h2>
+    <p>Кайсы сөздөр бири-бирине окшош?</p>
+    <ul>
+        <li>Китеп - ___</li>
+        <li>Үй - ___</li>
+    </ul>
+    <input type="text" id="analogyAnswer" placeholder="Жоопту жазыңыз">
+    <button onclick="checkAnalogy()">Текшерүү</button>
+    <p id="analogyResult"></p>
+</section>
+
+<script>
+    function checkAnalogy() {
+        var answer = document.getElementById("analogyAnswer").value.toLowerCase();
+        if (answer === "дүкөн" || answer === "бардык") {
+            document.getElementById("analogyResult").textContent = "Жооп туура!";
+        } else {
+            document.getElementById("analogyResult").textContent = "Жооп туура эмес.";
+        }
+    }
+</script>

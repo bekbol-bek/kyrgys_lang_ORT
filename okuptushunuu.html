@@ -1,0 +1,20 @@
+<section id="okuptushunuu">
+    <h2>Окуп түшүнүү</h2>
+    <p><strong>Текст:</strong> "Кыргызстанда тоолор көп. Ар бир аймакта өзгөчөлүктөр бар."</p>
+    <p><strong>Суроо:</strong> Кыргызстанда эмне көп?</p>
+    <input type="text" id="readingAnswer" placeholder="Жоопту киргизиңиз">
+    <button onclick="checkReadingAnswer()">Текшерүү</button>
+    <p id="readingResult"></p>
+</section>
+
+<script>
+    function checkReadingAnswer() {
+        var answer = document.getElementById("readingAnswer").value.toLowerCase();
+        if (answer === "тоолор") {
+            document.getElementById("readingResult").textContent = "Жооп туура!";
+        } else {
+            document.getElementById("readingResult").textContent = "Жооп туура эмес.";
+        }
+    }
+</script>
+

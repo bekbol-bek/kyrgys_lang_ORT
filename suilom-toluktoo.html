@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сүйлөм толуктоо</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <section id="suylom-toluktoo" class="category-section">
+        <h2>Сүйлөм толуктоо</h2>
+        <p>Толуктаңыз: Мен ___ китепти окуп жатам.</p>
+    
+        <input type="text" id="answer" placeholder="Жоопту киргизиңиз">
+        <button onclick="checkAnswer()">Текшерүү</button>
+        
+        <p id="result"></p>
+    </section>
+    
+    <script>
+        function checkAnswer() {
+            var answer = document.getElementById("answer").value.toLowerCase();
+            if (answer === "бир") {
+                document.getElementById("result").textContent = "Жооп туура!";
+                document.getElementById("result").style.color = "#27ae60"; // Зеленый цвет для правильного ответа
+            } else {
+                document.getElementById("result").textContent = "Жооп туура эмес.";
+                document.getElementById("result").style.color = "#e74c3c"; // Красный цвет для неправильного ответа
+            }
+        }
+    </script>
+</body>
+</html>
+
+
