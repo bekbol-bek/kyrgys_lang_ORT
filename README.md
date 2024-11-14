@@ -1,0 +1,1 @@
+# kyrgys_lang_ORT
